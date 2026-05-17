@@ -367,12 +367,14 @@
       .nav-right {
         display: flex;
         align-items: center;
-        gap: 32px;
+        gap: 0;
         list-style: none;
+        justify-content: space-between;
+        flex: 1;
       }
       .nav-right {
         justify-content: flex-end;
-        gap: 24px;
+        gap: 20px;
       }
       .nav-left a,
       .nav-right a {
@@ -682,7 +684,7 @@
       .svc-num {
         font-size: 0.62rem;
         letter-spacing: 0.24em;
-        color: var(--gold);
+        color: var(--blk);
         display: block;
         margin-bottom: 10px;
         font-family: "Inter", sans-serif;
@@ -1986,7 +1988,7 @@
         display: inline-block;
         background: rgba(196, 152, 90, 0.15);
         border: 1px solid rgba(196, 152, 90, 0.3);
-        color: var(--gold);
+        color: var(--blk);
         font-size: 0.55rem;
         letter-spacing: 0.18em;
         text-transform: uppercase;
@@ -2393,8 +2395,8 @@
           </li>
           <li>
             <a href="#how-it-works"
-              ><span class="en">How It Works</span
-              ><span class="jp">ご予約の流れ</span></a
+              ><span class="en">Steps</span
+              ><span class="jp">流れ</span></a
             >
           </li>
           <li>
@@ -2404,11 +2406,11 @@
           </li>
           <li>
             <a href="#booking" class="nav-cta"
-              ><span class="en">Book Now</span
-              ><span class="jp">予約する</span></a
+              ><span class="en">Book</span
+              ><span class="jp">予約</span></a
             >
           </li>
-          <li><a href="mailto:zentokyocleaning@gmail.com" class="nav-email-cta" onclick="gtag('event','cta_click',{cta_label:'email_us',location:'nav'})"><span class="en">Email Us</span><span class="jp">メール</span></a></li>
+          <li><a href="mailto:zentokyocleaning@gmail.com" class="nav-email-cta" onclick="gtag('event','cta_click',{cta_label:'email_us',location:'nav'})"><span class="en">Contact</span><span class="jp">お問い合わせ</span></a></li>
           <li>
             <button class="lang-btn" onclick="toggleLang()" id="langBtn">
               日本語
@@ -3877,7 +3879,7 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-a">
-              <span class="en">We service North Brisbane and surrounding suburbs including Chermside, Aspley, Albany Creek, Stafford, Kedron, Everton Park, Mitchelton, Ferny Hills, The Gap, and Bridgeman Downs. Not sure if we cover your area? Send us an email.</span>
+              <span class="en">We service suburbs across North Brisbane and the inner-north, including Clayfield, Wavell Heights, Northgate, Virginia, Hendra, Geebung, Banyo, Ascot, Wooloowin, Chermside, Kedron, Gordon Park, Lutwyche, Nudgee, Taigum, Hamilton, Albion, Zillmere, Stafford Heights, Stafford, Windsor, Eagle Farm, Aspley, Wilston, Fitzgibbon, Bowen Hills, Everton Park, McDowall, Fortitude Valley, Gaythorne, Boondall, Sandgate, Shorncliffe, Herston, Bulimba, Newmarket, Alderley, New Farm, Everton Hills, Mitchelton, Bridgeman Downs, Kelvin Grove, Carseldine, Brisbane City, Spring Hill, Hawthorne, Norman Park, Morningside, Balmoral, Bracken Ridge, Ashgrove, Red Hill, Kangaroo Point, Woolloongabba, Cannon Hill, Bald Hills, Enoggera, Keperra, South Brisbane, Albany Creek, Brighton, Paddington, Milton, and Camp Hill. Not sure if your suburb is covered? Just send us a message — we're happy to check.</span>
               <span class="jp">Chermside、Aspley、Albany Creek、Stafford、Kedron、Everton Park、Mitchelton、Ferny Hills、The Gap、Bridgeman Downsなど、ノースブリスベンとその周辺郊外に対応しています。お住まいのエリアが対応エリアかどうか不明な場合は、メールにてお気軽にお問い合わせください。</span>
             </div>
           </div>
@@ -3889,7 +3891,7 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-a">
-              <span class="en">We use flat-rate pricing based on the number of bedrooms and bathrooms. No hidden fees — you always know the full price upfront. You can see all pricing in the Pricing section above.</span>
+              <span class="en">Our pricing is straightforward — flat rates based on the number of bedrooms and bathrooms in your home. No hourly billing, no hidden fees, no surprises. You'll know exactly what you're paying before we arrive. View the full pricing breakdown on our Pricing page.</span>
               <span class="jp">寝室と浴室の数に基づく定額料金制です。追加料金は一切なく、予約前に必ず料金をご確認いただけます。上記の料金セクションで詳細をご覧ください。</span>
             </div>
           </div>
@@ -3901,7 +3903,7 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-a">
-              <span class="en">Yes. We bring all professional-grade cleaning products and equipment. If you have a preference for specific eco-friendly products, please let us know when booking.</span>
+              <span class="en">Yes — we bring all of our own professional-grade cleaning products and equipment. The only item we ask you to provide is a toilet brush, as this is a hygiene best practice we follow for every home we clean.</span>
               <span class="jp">はい。プロ仕様の清掃用品と機器を持参します。特定の環境に優しい製品をご希望の場合は、ご予約時にお知らせください。</span>
             </div>
           </div>
@@ -3913,7 +3915,7 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-a">
-              <span class="en">We are fully insured for your complete peace of mind. All cleaning is carried out directly by our own team — we never use sub-contractors. This ensures consistent quality and accountability on every visit.</span>
+              <span class="en">Absolutely. We are fully insured and ABN-registered, so your home and belongings are always protected. We also never use sub-contractors — every clean is performed personally by me, so you always know exactly who is coming into your home. Consistent, familiar, and trustworthy service every time.</span>
               <span class="jp">全額保険に加入しており、安心してお任せいただけます。また、すべての清掃は自社スタッフが直接行います。下請け業者は一切使用しないため、毎回一貫した品質をお約束します。</span>
             </div>
           </div>
@@ -3925,7 +3927,7 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-a">
-              <span class="en">We aim to reply to all enquiries within 2 hours during business hours (Monday–Friday, 7 am–6 pm). You can also reach us directly at zentokyocleaning@gmail.com.</span>
+              <span class="en">We aim to respond to all enquiries within 24 hours on business days (Monday–Friday). If you send your message in the morning, you'll typically hear back the same day. For urgent requests, feel free to email us directly at zentokyocleaning@gmail.com</span>
               <span class="jp">営業時間内（月〜金、午前7時〜午後6時）は2時間以内のご返信を目指しています。メールでの直接のお問い合わせも歓迎です：zentokyocleaning@gmail.com</span>
             </div>
           </div>
@@ -3973,7 +3975,7 @@
                 ><span class="jp">対応エリア</span></span
               >
               <p class="bk-cval">
-                <span class="en">North Brisbane &amp; Surrounding Suburbs</span
+                <span class="en">Clayfield, Wavell Heights, Northgate, Virginia, Hendra, Geebung, Banyo, Ascot, Wooloowin, Chermside, Kedron, Gordon Park, Lutwyche, Nudgee, Taigum, Hamilton, Albion, Zillmere, Stafford Heights, Stafford, Windsor, Eagle Farm, Aspley, Wilston, Fitzgibbon, Bowen Hills, Everton Park, McDowall, Fortitude Valley, Gaythorne, Boondall, Sandgate, Shorncliffe, Herston, Bulimba, Newmarket, Alderley, New Farm, Everton Hills, Mitchelton, Bridgeman Downs, Kelvin Grove, Carseldine, Brisbane City, Spring Hill, Hawthorne, Norman Park, Morningside, Balmoral, Bracken Ridge, Ashgrove, Red Hill, Kangaroo Point, Woolloongabba, Cannon Hill, Bald Hills, Enoggera, Keperra, South Brisbane, Albany Creek, Brighton, Paddington, Milton, Camp Hill</span
                 ><span class="jp">ノースブリスベン・周辺郊外</span>
               </p>
             </div>
@@ -4485,6 +4487,25 @@
           });
         }
       });
+    </script>
+    <script>
+      function toggleFaq(btn) {
+        var item = btn.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('button').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          try {
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'faq_open', { question: btn.querySelector('.en').textContent.trim() });
+            }
+          } catch(e) {}
+        }
+      }
     </script>
   </body>
 </html>
